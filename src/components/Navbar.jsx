@@ -70,7 +70,7 @@ const Navbar = () => {
 					</SearchContainer>
 				</Left>
 				<Center>
-					<Logo>Bek.</Logo>
+					<Logo>BEK.</Logo>
 				</Center>
 				<Right>
 					<MenuItem>Register</MenuItem>

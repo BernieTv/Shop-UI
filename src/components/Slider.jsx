@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 import { sliderItems } from '../data';
 
@@ -10,6 +11,7 @@ const Container = styled.div`
 	display: flex;
 	position: relative;
 	overflow: hidden;
+	${mobile({ display: 'none' })}
 `;
 
 const Arrow = styled.div`
@@ -57,7 +59,7 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
 	flex: 1;
-	padding: 10px;
+	padding: 50px;
 `;
 
 const Title = styled.h1`
@@ -77,6 +79,7 @@ const Button = styled.button`
 	background-color: transparent;
 	cursor: pointer;
 `;
+
 const Slider = () => {
 	const [slideIndex, setSlideIndex] = useState(0);
 
